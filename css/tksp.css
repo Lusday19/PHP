@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: --font-family-sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  section #menu {
+    position: sticky;
+    top: 0;
+  
+    z-index: 7;
+  }
+  .carousel-inner{
+      z-index: 1  ;
+  }
+  section {
+    width: 100%;
+  
+  }
+  body {
+    width: 100%;
+  }
+  section header .logo {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  section .texts h1 {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    color: #6a6666;
+  }
+  section .texts p {
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+  }
+  
+  section .background_image img {
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+  }
+  
+  section .btn {
+    position: relative;
+    top: 60%;
+    left: 98px;
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: #f9004d;
+    font-weight: bold;
+  }
+  
+  section .btn .read {
+    background: #b36982;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+  }
+  section .btn .read2 {
+    margin-top: 17px;
+  }
+  section .btn p {
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #b36982;
+    cursor: pointer;
+  }
+  
+  .about {
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+  }
+  .about .card a {
+    text-align: center;
+  }
+  .about .box {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about .MacBook p {
+    text-align: center;
+    margin: 35px 0;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .about .MacBook_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 20px;
+    background-color: #eeee;
+    padding: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .about .MacBook_box .MacBook_card {
+    background: white;
+    width: 270px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .about .MacBook .MacBook_box img {
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .about .MacBook .MacBook_box img:hover {
+    transform: scale(0.9);
+  }
+  
+  .about .MacBook_box .MacBook_card h6 {
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .span {
+    color: #cc0000;
+    font-weight: bold;
+  }
+  .about .MacBook_box .MacBook_card p {
+    color: black;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .about .MacBook_box .MacBook_card .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #b36982;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .footer {
+    background: #24262b;
+    padding: 50px;
+  }
+  
+  .footer .main {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+              
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer_col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer_col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer_col ul li {
+    margin-bottom: 20px;
+  }
+  
+  .footer_col ul li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+  }
+  
+  .footer_col .social img {
+    width: 20px;
+    margin: 5px;
+  }
+  .img {
+    height: 550px;
+    width: 75%;
+    margin-left: 190px;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand span {
+    color: #f9004d;
+  }
+  .navbar-brand {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .navbar a {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .dropdown-menu a {
+    background-color: #eeee;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    z-index: 7;
+  }
+  .dropdown-menu a:hover {
+    color: black;
+  }
+  .navbar-nav {
+    margin-left: 100px;
+  }
+  #logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin-left: 45px;
+  }
+  .navbar-collapse {
+    font-size: 18px;
+    margin-left: 95px;
+  }
+  .main1 {
+    width: 40%;
+    margin-right: -70px;
+    margin-top: 10px;
+  }
+  
+  /* Bootstrap 4 text input with search icon */
+  
+  .has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 1.775rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  #menu{
+    height: 70px;
+  }
+  .form-inline button{
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+    color: red;
+    margin-right: 100px;
+  }
+  .form-inline button:hover {
+    color: white;
+    background: #b36982;
+  }
+  .menu2 {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background-color: #eeee;
+    justify-content: space-evenly;
+  }
+  .nav-link1 {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    position: absolute;
+  
+    margin-left: 110px;
+  }
+  section #menu .signup a {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-right: 100px;
+  }
+  section #menu .signup a:hover {
+    color: white;
+    background: #b36982;
+  }
+  .form-group {
+    width: 60%;
+    margin-left: 90px;
+  }
+  .nav-item .nav-link1 {
+    background-color: #eeee;
+    text-decoration: none;
+  }
+  
+  
+#demo{
+    margin-top: 20px;
+}
+#check_sanpham .sibar{
+    width: 28%;
+    float: left;
+    padding: 0px 80px 40px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+html{
+    background-color: #eeee;
+}
+.checkSS{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowss{
+    font-size: 15px;  
+    display: flex;
+    justify-content: flex-start ;
+   align-items: center;
+     
+}
+.hangsanxuat h5{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.rowss input[type = "checkbox"]
+{
+    width: 20px;
+    height: 30px;
+    margin-right: 20px;
+}
+.main{
+    height: auto;
+}
+.content{   
+    width: 100%;
+}
+.header_show{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: auto;
+    width: 55%;
+    margin-left: 30%;
+}
+.header1_show{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: auto;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 20px;
+}
+#Dm-item{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.header_show h3{
+    padding: 20px;
+    font-weight: bold;
+}
+.header_show h5{
+    margin-left: 20px;
+}
+.header1_show h3{
+    padding: 20px;
+    font-weight: bold;
+}
+.header1_show img{
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+}
+.header2_show img{
+    height: 230px;
+    width: 230px;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.poduct-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.header2_show{
+    height: auto;
+    width: 100%;
+    margin-left: 0%;
+    background-color:whitesmoke ;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.poduct1-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-top: 20px;
+}
+@media (max-width:769px) {
+    #check_sanpham{
+        display: none;
+    }
+    .header_show{
+        width: 100%;
+        margin: 0;
+    }
+    .header1_show{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width:1425px) {
+    #check_sanpham{
+        display: none;
+    }
+    .header_show{
+        width: 100%;
+        margin: 0;
+    }
+    .header1_show{
+        width: 100%;
+        margin: 0;
+    }
+}
+.card{
+    width: 230px;
+    height:  310px;  
+    margin:15px;
+}

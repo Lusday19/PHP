@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: --font-family-sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  section #menu {
+    position: sticky;
+    top: 0;
+  
+    z-index: 7;
+  }
+  .carousel-inner{
+      z-index: 1  ;
+  }
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  body {
+    width: 100%;
+  }
+  section header .logo {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  section .texts h1 {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    color: #6a6666;
+  }
+  section .texts p {
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+  }
+  
+  section .background_image img {
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+  }
+  
+  section .btn1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-color: blue;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 13px;
+  }
+  .action1{
+    display: flex;
+    
+  }
+  section .btn .read {
+    background: #b36982;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+  }
+  section .btn .read2 {
+    background: white;
+    color: b36982;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 40px;
+  
+  }
+  section .btn p {
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid #b36982;
+    cursor: pointer;
+  
+  }
+  
+  .about {
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+  }
+  .about .card a {
+    text-align: center;
+  }
+  .about .box {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about .MacBook p {
+    text-align: center;
+    margin: 35px 0;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .about .MacBook_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 20px;
+    background-color: #eeee;
+    padding: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .about .MacBook_box .MacBook_card {
+    background: white;
+    width: 270px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .about .MacBook .MacBook_box img {
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .about .MacBook .MacBook_box img:hover {
+    transform: scale(0.9);
+  }
+  
+  .about .MacBook_box .MacBook_card h6 {
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .span {
+    color: #cc0000;
+    font-weight: bold;
+  }
+  .about .MacBook_box .MacBook_card p {
+    color: black;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .about .MacBook_box .MacBook_card .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #b36982;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .footer {
+    background: #24262b;
+    padding: 50px;
+    margin-top: 40px;
+  }
+  
+  .footer .main {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+              
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer_col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer_col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer_col ul li {
+    margin-bottom: 20px;
+  }
+  
+  .footer_col ul li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+  }
+  
+  .footer_col .social img {
+    width: 20px;
+    margin: 5px;
+  }
+  .img {
+    height: 550px;
+    width: 75%;
+    margin-left: 190px;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand span {
+    color: #f9004d;
+  }
+  .navbar-brand {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .navbar a {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .dropdown-menu a {
+    background-color: #eeee;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    z-index: 7;
+  }
+  .dropdown-menu a:hover {
+    color: black;
+  }
+  .navbar-nav {
+    margin-left: 100px;
+  }
+  #logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin-left: 45px;
+  }
+  .navbar-collapse {
+    font-size: 18px;
+    margin-left: 95px;
+  }
+  .main1 {
+    width: 40%;
+    margin-right: -70px;
+    margin-top: 10px;
+  }
+  
+  /* Bootstrap 4 text input with search icon */
+  
+  .has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 1.775rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  #menu{
+    height: 70px;
+  }
+  .form-inline button{
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+    color: red;
+    margin-right: 100px;
+  }
+  .form-inline button:hover {
+    color: white;
+    background: #b36982;
+  }
+  .menu2 {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background-color: #eeee;
+    justify-content: space-evenly;
+  }
+  .nav-link1 {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    position: absolute;
+  
+    margin-left: 110px;
+  }
+  section #menu .signup a {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-right: 100px;
+  }
+  section #menu .signup a:hover {
+    color: white;
+    background: #b36982;
+  }
+  .form-group {
+    width: 60%;
+    margin-left: 90px;
+  }
+  .nav-item .nav-link1 {
+    background-color: #eeee;
+    text-decoration: none;
+  }
+  .menu-main{
+    position: relative;
+    
+  }
+  .nav-link1
+  {
+    position: absolute;
+    right: 0;
+  }
+  .form-group{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin: 0px;
+  }
+  input.form-control{
+    width: 80%;
+  }
+  .main2,.main1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+  }
+  @media (max-width:1425px) {
+    .img {
+      height: 250px;
+      width: 60%;
+      margin-bottom: 20px;
+    }
+    .background_image{
+      display: none;
+    }
+    .texts h1{
+      font-size: 50px;
+    }
+    .btn{
+      justify-content: center;
+      margin-left: 100px;
+    }
+    .read2{
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  } 
+.card{
+    margin-top: 50px;
+    padding: 10px;
+}
+#pic-2 img{
+    width: 90%;
+    height: 350px;
+}
+#pic-1 img{
+    width: 90%;
+    height: 350px;
+}
+section{
+    height: auto;
+}
+.wrapper{
+    margin-top: 100px;
+}
+
+.test{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.preview-img{
+    float: left;
+    width: 70%;
+    padding-right: 50px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 140%;
+}
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.thongso{
+    width: 30%;
+    padding:10px 30px;
+    
+}
+.khoangcach{
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.textthongso h6{
+    padding: 4px;
+    display: flex
+}
+
+@media (max-width: 769px) {
+    .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .preview-img{
+        float: left;
+        width: 100%;
+    }
+    #pic-2 img{
+        width: 100%;
+        height: auto;
+    }
+    .thongso{
+        width: 100%;
+       
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 100%;
+    }
+}
